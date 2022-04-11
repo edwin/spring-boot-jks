@@ -55,3 +55,9 @@ curl -kv https://<apps-ip>
 *  SSL certificate verify result: self signed certificate (18), continuing anyway.
 
 ```
+
+## Blog Post
+Write-ups for this can be seen here,
+```
+https://edwin.baculsoft.com/2022/04/deploy-a-spring-boot-app-with-https-by-using-jks-file-into-openshift-4/
+```
