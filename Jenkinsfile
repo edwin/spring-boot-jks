@@ -8,7 +8,7 @@ node('maven') {
         dir("source") {
             tag = sh(returnStdout: true, script: "git rev-parse --short=8 HEAD").trim();
 
-            sh "mkdir build-folder"
+            sh "mkdir -p build-folder/target"
             sh "mkdir properties-folder"
             sh "mvn -B clean package -Dmaven.repo.local=/tmp/source/m2 "
 
