@@ -1,6 +1,6 @@
-FROM openjdk:11.0.7-jre-slim-buster
+FROM java:11
 
-LABEL base-image="openjdk:11.0.7-jre-slim-buster" \
+LABEL base-image="java:11" \
       java-version="11.0.7" \
       purpose="Hello World with SSL, Java and Dockerfile"
 
