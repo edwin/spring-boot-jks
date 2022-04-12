@@ -13,7 +13,7 @@ node('maven') {
             sh "mvn -B clean package -Dmaven.repo.local=/tmp/source/m2 "
 
             sh "cp Dockerfile build-folder/Dockerfile"
-            sh "cp target/*.jar build-folder/app.jar"
+            sh "cp target/*.jar build-folder/target/app.jar"
         }
     }
     stage ('build and push') {
