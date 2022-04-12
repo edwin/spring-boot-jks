@@ -1,4 +1,4 @@
-node('maven-helm') {
+node('maven') {
     def tag;
 
     stage ('pull code') {
