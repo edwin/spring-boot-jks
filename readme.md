@@ -32,7 +32,7 @@ $ oc new-app --name=spring-boot-jks --image-stream=test-project/spring-boot-jks:
 Assign JKS and other properties, from a Secret configuration
 ```
 $ oc set volume dc/spring-boot-jks --add --name=spring-boot-jks-mnt \
-  --secret-name=spring-boot-jks-file --mount-path=/tmp/jks/
+    --secret-name=spring-boot-jks-file --mount-path=/tmp/jks/
 
 $ oc set env dc/spring-boot-jks --from=secret/spring-boot-secrets
 ```
